@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  background-color: #393053;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Josefin Sans", sans serif;
+  text-shadow: 3px 0 #E90064;
+
+}
+
+p{
+  color: #DBEDF3;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 2rem;
+}
+
+
+footer {
+  color: #DBEDF3;
+  font-family: 'Carter One', cursive;
+}
+
+/* ARROW ANIMATION!!!!!! */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(0deg);
+  
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+
+.other-img{
+  position: absolute;
+  width: 15%;
+  height: auto;
+  left: 15px;
+  top: 20px;
+}
+
+.main-img{
+  position: absolute;
+  width: 13%;
+  height: auto;
+  right: 30px;
+  top: 210px;
+}
+.w {
+  background-image: url('images/crash.png');
+  background-color: #DA0463;
+}
+
+.a {
+  background-image: url('images/kick.png');
+  background-color: #DA0463;
+}
+
+.s {
+  background-image: url('images/snare.png');
+  background-color: #DA0463;
+}
+
+.d {
+  background-image: url('images/tom1.png');
+  background-color: #DA0463;
+}
+
+.j {
+  background-image: url('images/tom2.png');
+  background-color: #DA0463;
+}
+
+.k {
+  background-image: url('images/tom3.png');
+  background-color: #DA0463;
+}
+
+.l {
+  background-image: url('images/tom4.png');
+  background-color: #DA0463;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Carter One', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #E90064;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
